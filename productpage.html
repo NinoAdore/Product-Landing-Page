@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;1,200&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/Images/Abenson Logo.jpg" alt="Error">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li class="navlink"><a href="index.html">Home</a></li>
+                    <li class="navlink"><a href="product.html">Products</a></li>
+                    <li class="navlink"><a href="">About</a></li>
+                    <li class="navlink"><a href="#footer-col-4 h4">Contact Us</a></li>
+                    <li class="navlink"><a href="">Sign In</a></li>
+                </ul>
+            </nav>
+            <i class="fa fa-shopping-cart" style="font-size:30px"></i>
+            <img src="/Images/menu.png" width="30px" height="30px" class="menu" 
+            onclick="menutoggle()">
+        </div>
+    </div>
+
+    <div class="page-container">
+        <div class="page-row">
+            <div class="page-col">
+                <img src="Images/product2.png">
+            </div>
+            <div class="page-col">
+                <p>HOME > SAMSUNG UHD UA55AU8080GXXP</p>
+                <h1>SAMSUNG UHD UA55AU8080GXXP</h1>
+                <p>SKU# 174864</p>
+                <p>55-inch LED, 4K Ultra HD, Smart TV, AirSlim</p>
+                <h4>₱34,998</h4>
+                <h5>Soundbar</h5>
+                <select >
+                    <option>--Please Select--</option>
+                    <option>Samsung HW-A550/XP + ₱9,999</option>
+                    <option>Samsung HW-Q600A/XP + ₱15,999</option>
+                </select>
+                <h5>TV Stand Bracket</h5>
+                <select >
+                    <option>--Please Select--</option>
+                    <option>Samsung VG-SESA11K/XY + ₱7,999</option>
+                </select>
+                <h5>Bracket Installation Standard Service</h5>
+                <select >
+                    <option>--Please Select--</option>
+                    <option>Fixed Wall Bracket and Installation + ₱1,998</option>
+                </select>
+                <div class="addtocart">
+                    <label for="QTY">QTY:</label>
+                    <input type="number" value="1" class="qty">
+                    <a href="" class="btn"><i class="fa fa-shopping-cart" style="font-size:30px"></i>add to cart</a>
+                </div>
+                <div id="italic">
+                <p>Create a cinematic experience at home with the Samsung UHD UA55AU8080GXXP Smart TV. <br>
+                    To learn more about Samsung's Smart TVs, keep browsing to discover more on abenson.com <br>
+                    for amazing prices and deals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Get special offers from Abenson</h2>
+        <div class="form">
+            <form action="">
+                <input type="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" required>
+                <button class="btn" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+        <div class="container2">
+            <div class="footer-col-1">
+                <h4>HELP CENTER</h4>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Buyer's Guide</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms Of Use</li>
+                    <li>Warranty</li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <h4>CONNECT WITH US</h4>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    <li>Viber Community</li>
+                    <li>Store Directory</li>
+                </ul>
+            </div>
+            <div class="footer-col-3">
+                <h4>ABOUT ABENSON</h4>
+                <ul>
+                    <li>Why Shop At Abenson</li>
+                    <li>Store Locator</li>
+                    <li>Business Solutions</li>
+                    <li>Appliance Padala</li>
+                    <li>New Home Solutions</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h4>CONTACT US</h4>
+                <ul>
+                    <li>(02) 8811 8811</li>
+                    <li>09178799483</li>
+                    <li>09178799483</li>
+                    <li>09209328523</li>
+                    <li>(02) 8248 3255</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+            <p id="copyright">Copyright &#169 2022 - Product Landing Page</p>
+    
+    <!------js for toggle menu------>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"; 
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+    
+</body>
+</html>
