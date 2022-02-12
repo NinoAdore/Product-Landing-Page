@@ -103,6 +103,7 @@ a {
     padding-top: 20px;
     display: flex;
     justify-content: space-evenly;
+    transition: transform 0.5s;
 
 }
 
@@ -120,6 +121,7 @@ h3 {
 h3:hover {
     background-color: #D2EDFF;
     color: #1E22AA;
+    transform: translateY(-5px);
 }
 
 .navbar .fa {
@@ -146,6 +148,10 @@ h3:hover {
     height: 300px;
     border-radius: 10px;
     box-shadow: 5px 5px #efeff0;
+}
+
+.latest img:hover {
+    transform: translateY(-5px);
 }
 
 .latest p {
@@ -179,9 +185,8 @@ h3:hover {
     width: 160px;
     height: 150px;
     text-align: center;
-    background: rgb(218, 211, 211);
     font-weight: 500;
-    color: whitesmoke;
+    color: rgb(151, 149, 149);
     border-radius: 10px;
 }
 .categs:hover {
@@ -198,8 +203,6 @@ h3:hover {
     width: 500px;
     height: 500px;
 }
-
-
 
 .footer {
     background: #1E22AA;
@@ -280,13 +283,14 @@ select:focus {
     background: radial-gradient(white,rgb(214, 214, 212) );
 }
 
-.page-row {
+.page-row, .page-row2 {
     width: 1500px;
     background: white;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .page-col {
@@ -333,9 +337,69 @@ select:focus {
     padding-top: 10px;
 }
 
+.page-row2 {
+    text-align: center;
+    padding: 0px !important;
+}
+
+.page-col2, .page-col3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.page-col2 h1, .page-col3 h1 {
+    position: absolute;
+    color: #efeff0;
+    top: 60px;
+}
+
+.page-col3 p {
+    position: absolute;
+    color: #efeff0;
+    top: 110px;
+}
+
+.page-col2 img, .page-col3 img {
+    width: 1500px;
+}
+
+.success-row {
+    width: 1500px;
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 55vh;
+}
+
+.success-col img{
+    height: 100px;
+    width: 100px;
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+.success-col .btn {
+    color: #1E22AA;
+    background: #D2EDFF;
+    margin-top: 30px;
+    border: none;
+    height: 40px;
+    width: 200px;
+}
+
+.success-col .btn:hover {
+    color: white;
+    background: #1E22AA;
+}
+
+
 /*----------------media query for menu ---------*/
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 900px) {
     nav ul {
         position: absolute;
         top: 70px;

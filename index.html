@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;1,200&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,14 +12,13 @@
 <body>
     <div id="header">
         <div class="navbar">
-            <div class="logo">
+            <a href="index.html"><div class="logo">
                 <img src="/Images/Abenson Logo.jpg" alt="Error">
-            </div>
+            </div></a>
             <nav>
                 <ul id="MenuItems">
                     <li class="navlink"><a href="index.html">Home</a></li>
                     <li class="navlink"><a href="product.html">Products</a></li>
-                    <li class="navlink"><a href="">About</a></li>
                     <li class="navlink"><a href="#footer-col-4">Contact Us</a></li>
                     <li class="navlink"><a href="">Sign In</a></li>
                 </ul>
@@ -79,7 +78,7 @@
                 <p>₱72,990</p>
             </div>
             <div class="latest">
-                <img src="/Images/product2.png" >
+                <a href="productpage.html"><img src="/Images/product2.png" ></a>
                 <h5>SAMSUNG UHD UA55AU8080GXXP</h5>
                 <p>₱34,998</p>
             </div>
@@ -109,7 +108,7 @@
                 <p>₱72,990</p>
             </div>
             <div class="latest">
-                <img src="/Images/product2.png" >
+                <a href="productpage.html"><img src="/Images/product2.png" ></a>
                 <h5>SAMSUNG UHD UA55AU8080GXXP</h5>
                 <p>₱34,998</p>
             </div>
@@ -159,7 +158,8 @@
     <div class="footer">
         <h2>Get special offers from Abenson</h2>
         <div class="form">
-            <form action="">
+            <form action="success.html">
+                <label for="email"></label>
                 <input type="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" required>
                 <button class="btn" type="submit">Subscribe</button>
             </form>
@@ -218,16 +218,12 @@
         MenuItems.style.maxHeight = "0px";
 
         function menutoggle() {
-            if(MenuItems.style.maxHeight == "0px")
-                {
-                    MenuItems.style.maxHeight = "200px"; 
-                }
-            else
-                {
-                    MenuItems.style.maxHeight = "0px";
-                }
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
         }
     </script>
-    
 </body>
 </html>

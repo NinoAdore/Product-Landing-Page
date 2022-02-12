@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
+    <title>Success Page</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;1,200&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -30,55 +30,14 @@
     </div>
 
     <div class="page-container">
-        <div class="page-row">
-            <div class="page-col">
-                <img src="Images/product2.png">
+        <div class="success-row">
+            <div class="success-col">
+                <img src="/Images/check.png.png"/>
+                <h1>THANK YOU FOR SUBSCRIBING!</h1>
+                <p>Your email <span data-email></span> has been successfully subscribed to our newsletter.</p>
+                <a href="/product.html"><button class="btn">Order Now</button></a>
             </div>
-            <div class="page-col">
-                <p>HOME > SAMSUNG UHD UA55AU8080GXXP</p>
-                <h1>SAMSUNG UHD UA55AU8080GXXP</h1>
-                <p>SKU# 174864</p>
-                <p>55-inch LED, 4K Ultra HD, Smart TV, AirSlim</p>
-                <h4>₱34,998</h4>
-                <h5>Soundbar</h5>
-                <select >
-                    <option>--Please Select--</option>
-                    <option>Samsung HW-A550/XP + ₱9,999</option>
-                    <option>Samsung HW-Q600A/XP + ₱15,999</option>
-                </select>
-                <h5>TV Stand Bracket</h5>
-                <select >
-                    <option>--Please Select--</option>
-                    <option>Samsung VG-SESA11K/XY + ₱7,999</option>
-                </select>
-                <h5>Bracket Installation Standard Service</h5>
-                <select >
-                    <option>--Please Select--</option>
-                    <option>Fixed Wall Bracket and Installation + ₱1,998</option>
-                </select>
-                <div class="addtocart">
-                    <label for="QTY">QTY:</label>
-                    <input type="number" value="1" class="qty">
-                    <a href="" class="btn"><i class="fa fa-shopping-cart" style="font-size:30px"></i>add to cart</a>
-                </div>
-                <div id="italic">
-                <p>Create a cinematic experience at home with the Samsung UHD UA55AU8080GXXP Smart TV. <br>
-                    To learn more about Samsung's Smart TVs, keep browsing to discover more on abenson.com <br>
-                    for amazing prices and deals.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page-container">
-        <div class="page-row2">
-            <div class="page-col2">
-                <h1>Vivid cyrstal color on our slimmest profile</h1>
-                <img src="/Images/tvpic1.png" >
-            </div>
-            <div class="page-col3">
-                <h1>Lifelike color, born in a pure state with fine cyrstal</h1>
-                <p>Immerse yourself in the picture with one billion shade of color.</p>
-                <img src="/Images/tivpic2.png" >
+            
             </div>
         </div>
     </div>
@@ -125,7 +84,7 @@
                     <li>New Home Solutions</li>
                 </ul>
             </div>
-            <div id="footer-col-4">
+            <div class="footer-col-4">
                 <h4>CONTACT US</h4>
                 <ul>
                     <li>(02) 8811 8811</li>
@@ -154,6 +113,23 @@
             }
         }
     </script>
-    
+ 
+    <!------js for form------>
+
+    <script>
+
+    (function () {
+    var queryString = window.location.search;
+    var parameters = new URLSearchParams(queryString);
+
+    var userEmail = parameters.get("email");
+
+    var cxEmail = document.querySelector("[data-email]");
+
+    cxEmail.textContent = userEmail;
+    })();
+
+    </script>
+   
 </body>
 </html>
